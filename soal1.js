@@ -26,10 +26,10 @@ function posneg()
         y += neg[k]
     }
 
-    console.log(pos);
-    console.log(neg);
-    console.log(x);
-    console.log(y);
+//     console.log(pos);
+//     console.log(neg);
+//     console.log(x);
+//     console.log(y);
 
     if ( x > (Math.abs(y)))
     {
