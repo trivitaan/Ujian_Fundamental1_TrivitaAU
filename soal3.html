@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+        function login()
+        {
+            var users = [['anandakuna', '10927akb'],['hikomowawaw', 'babababylon1'],['jamescho','shin3st4r'],['moniqueka', 'moniqute73']]
+            var user = document.getElementById("login").elements[0].value;
+            var pass = document.getElementById("login").elements[1].value;
+
+           for(i=0; i<users.length; i++)
+           {
+               if (user == users[i][0] && pass == users[i][1])
+               {
+                   alert('Login Berhasil')
+               }
+               else
+               {
+                    alert('Data yang Anda Masukkan Salah. Coba Lagi')
+               }
+
+               return
+           }
+
+        }
+        </script>
+    </head>
+
+    <title>
+    Login Page
+    </title>
+    
+    <body>
+        <center>
+        <h2>Login Here</h2>
+            
+        <form id="login">
+            Username : <input type="text" id="username"><br><br>
+            Password : <input type="text" id="password"><br><br>
+        </form>
+
+        <button onclick="login()">Login</button>
+        
+        </center>
+    </body>
+</html>

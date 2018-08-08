@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script>
+            // var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+            var input = parseInt(prompt('Masukkan waktu dalam detik untuk mulai menghitung mundur!'))
+                var hours = Math.floor(input / 3600);
+                var minutes = Math.floor((input%3600)/60);
+                var seconds = input % 60;    
+
+            
+            function time()
+            {   
+
+                var input = parseInt(prompt('Masukkan waktu dalam detik untuk mulai menghitung mundur!'))
+                var hours = Math.floor(input / 3600);
+                var minutes = Math.floor((input%3600)/60);
+                var seconds = input % 60;    
+
+                if(hours < 10)
+                {
+                    hours = '0' + hours
+                }
+                if(minutes< 10)
+                {
+                    minutes = '0' + minutes
+                }
+                if(seconds < 10)
+                {
+                    seconds = '0' + seconds
+                }             
+                
+                console.log(hours + ' : ' + minutes + ' : ' + seconds);
+                // console.log(hr + ' : ' + min + ' : ' + sec);
+                document.getElementById("output").innerHTML =  hours + ' : ' + minutes + ' : ' + seconds
+
+            }
+            
+        </script>
+    </head>
+
+    <title>
+        Countdown
+    </title>
+
+    <body>
+        <center>
+
+        <button onclick="time()"> Countdown </button><br><br>
+        <b><div id="output"></div></b><br><br>
+
+        <button onclick="countdown()"> Start </button><br><br>
+        <b><div id="output2"></div></b>
+        
+        </center>
+
+    </body>
+</html>
